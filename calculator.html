@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <style>
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+  }
+  
+  .calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    max-width: 300px;
+    padding: 10px;
+    background-color: #6ea3e0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(16, 56, 187, 0.1);
+  }
+  
+  .display {
+    grid-column: span 4;
+    text-align: right;
+    padding: 10px;
+    font-size: 24px;
+    background-color: #c8d9e7;
+    border-radius: 5px;
+  }
+  
+  .btn {
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    background-color: #2e4fbb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #d0d0d0;
+  }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <div class="display" id="display">0</div>
+    <button class="btn" id="clear">C</button>
+    <button class="btn" id="backspace">←</button>
+    <button class="btn" id="divide">/</button>
+    <button class="btn" id="seven">7</button>
+    <button class="btn" id="eight">8</button>
+    <button class="btn" id="nine">9</button>
+    <button class="btn" id="multiply">*</button>
+    <button class="btn" id="four">4</button>
+    <button class="btn" id="five">5</button>
+    <button class="btn" id="six">6</button>
+    <button class="btn" id="subtract">-</button>
+    <button class="btn" id="one">1</button>
+    <button class="btn" id="two">2</button>
+    <button class="btn" id="three">3</button>
+    <button class="btn" id="add">+</button>
+    <button class="btn" id="zero">0</button>
+    <button class="btn" id="decimal">.</button>
+    <button class="btn" id="equals">=</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
